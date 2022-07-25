@@ -1,0 +1,514 @@
+/* Paramètres initiaux */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+body {
+    margin-right: auto;
+    max-width: 1440px;
+    height: 1884px;
+    font-family: 'Raleway', sans-serif;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    height: 6%;
+}
+
+main {
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 82%;
+}
+
+h1, h2 {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+footer {
+    width: 100%;
+    height: 12%;
+    border: #0065FC solid 1px;
+}
+
+
+/* Header et navigation */
+
+header {
+    margin-left: 50px;
+    margin-right: 25px;
+    height: 116px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 95px;
+    margin-top: 22px;
+    height: fit-content;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    width: 324px;
+    height: 110px;
+}
+
+nav a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    padding: 30px 0px 30px 0px;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    border-top: rgba(0, 0, 0, 0) solid 3px;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top: #0065FC solid 3px;
+}
+
+
+/* Recherche */
+
+form h1 {
+    margin-bottom: 0px;
+}
+
+#searchBar {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#searchForm {
+    display: flex;
+    width: 420px;
+}
+
+#locationDot {
+    border: none;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    background: #F2F2F2;
+    height: 50px;
+    width: 50px;
+    padding: 14px;
+    border-radius: 16px 0px 0px 16px;
+    text-align: center;
+}
+
+#searchInput {
+    height: 50px;
+}
+
+#searchInput[type=text] {
+    width: 235px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: bold;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+#searchButtonBig {
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    background: #0065FC;
+    color: white;
+    border-radius: 0px 15px 15px 0px;
+    height: 50px;
+    width: 135px;
+    cursor: pointer;
+}
+
+#searchButtonSmall {
+    display: none;
+}
+
+
+/* Filtres */
+
+#filterSection {
+    display: flex;
+    gap: 24px;
+}
+
+#filterSection h2 {
+    font-size: 17px;
+    font-weight: 800;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+#filterForm {
+    display: flex;
+    gap: 24px;
+}
+
+.filtersButton {
+    display: flex;
+    align-items: center;
+}
+
+.filtersIcons  {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    display: inline-block;
+    font-size: 125%;
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 15px;
+    border: none;
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+}
+
+.filtersName {
+    display: inline-block;
+    border: #d9d9d9 solid 2px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 14px 20px 0px 60px;
+    cursor: pointer;
+    position: relative;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.filtersButton:hover input ~ .filtersName {
+    background-color: #F2F2F2;
+}
+
+.filtersButton input:checked ~ .filtersName {
+    background-color: #DEEBFF;
+}
+
+.filtersButton input:checked ~ .filtersIcons  {
+    color: #DEEBFF;
+    background-color: #0065FC;
+}
+
+.filtersButton input {
+    width: 0;
+    height: 0;
+}
+
+.filtersButton:nth-child(3) .filtersName:nth-child(3) {         /* Sélection du filtersName "Romantique" */
+    padding: 14px 15px 0px 60px;;
+}
+
+
+/* Barre d'info */
+
+#infoLine {
+    margin-top: 30px;
+}
+
+#infoDot {
+    display: inline-block;
+    color: #0065FC;
+    border: #F2F2F2 solid 1px;
+    font-size: 12px;
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    padding-top: 3px;
+    text-align: center;
+    padding-left: 1px;
+    position: relative;
+    bottom: 3px
+}
+
+#infoLine p {
+    position: relative;
+    display: inline-block;
+    margin: 0px 0px 0px 10px;
+}
+
+
+/* Hébergements + Hébergements Populaires */
+
+/* #hostAndPopular {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#hostSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    gap: 2.5%;
+    background-color: grey;
+    width: 66%;
+    height: 500px;
+    border-radius: 20px;
+    padding-left: 2.5%;
+}
+
+#hostSection h2 {
+    width: 100%;
+}
+
+#showMore {
+    width: 100%;
+}
+
+.host {
+    width: 30%;
+    height: 25%;
+    background-color: white;
+}
+
+#popularSection {
+    background-color: grey;
+    border-radius: 20px; 
+} */
+
+/* Hébergements */
+
+#hostAndPopular {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 628px;
+}
+
+#hostBackground {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 880px;
+    height: 100%;
+    padding: 2%;
+}
+
+#hostSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.hostCard {
+    width: 246px;
+    height: 200px;
+    text-decoration: none;
+    color: black;
+}
+
+.hostCard {
+    display: flex;
+    flex-direction: column;
+    width: 246px;
+    height: 200px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #d9d9d9;
+}
+
+.hostCard img {
+    width: 246px;
+    height: 125px;
+    object-fit: cover;
+    border: #DEEBFF solid 5px;
+    border-radius: 20px 20px 0 0;
+    object-position: 0 50%;
+}
+
+.hostDescription {
+    padding-left: 5%;
+    background-color: #DEEBFF;
+    height: 37.5%;
+    border-radius: 0 0 20px 20px;
+}
+
+.hostDescription h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 100%;
+}
+
+.hostDescription p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 90%;
+}
+
+.hostCard:hover {
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
+    transition: 0.1s;
+}
+
+.hostDescription div {
+    font-size: 75%;
+    color: #0065FC;
+}
+
+.coolPrice {
+    font-weight: 600;
+}
+
+.euro {
+    font-weight: 600;
+}
+
+/* Etoiles Hébergement */
+
+#starsH1 :nth-child(5) {
+    color: #F2F2F2;
+}
+
+#starsH3 :nth-child(5) {
+    color: #F2F2F2;
+}
+
+#starsH4 :nth-child(4),#starsH4 :nth-child(5) {
+    color: #F2F2F2;
+}
+
+#starsH5 :nth-child(5) {
+    color: #F2F2F2;
+}
+
+/* Populaires */
+
+#popularSection {
+    border: #0065FC solid 1px;
+    width: 32%;
+}
+
+.popularLink {
+    width: 344px;
+    height: 144px;
+    text-decoration: none;
+    color: black;
+}
+
+.popular {
+    display: flex;
+    width: 344px;
+    height: 144px;
+    background-color: #DEEBFF;
+    border: #DEEBFF solid 5px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px #d9d9d9;
+}
+
+.popular img {
+    width: 128px;
+    height: 135px;
+    object-fit: cover;
+    object-position: -5px 50%;
+}
+
+.popularDescription {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.popularDescription h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 100%;
+}
+
+.popularDescription p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 90%;
+}
+
+.popularLink:hover {
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
+    transition: 0.1s;
+}
+
+.popularDescription div:nth-child(2) {
+    font-size: 75%;
+    color: #0065FC;
+}
+
+/*
+.hostLink {
+    width: 246px;
+    height: 200px;
+    text-decoration: none;
+    color: black;
+}
+
+.host {
+    width: 246px;
+    height: 125px;
+    background-color: #DEEBFF;
+    border: #DEEBFF solid 5px;
+    margin-bottom: 10px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px #d9d9d9;
+}
+
+.host img {
+    width: 246px;
+    height: 125px;
+    object-fit: cover;
+    object-position: -5px 50%;
+    filter: blur(0.7px);
+}
+
+.hostDescription {
+    margin-left: 10px;
+    height: 75px;
+} */
+
+

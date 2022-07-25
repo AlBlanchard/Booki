@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <title>Booki</title>
+
+    <head>
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" media="screen and (max-width: 992px)" href="css/style_pad.css" />
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/style_phone.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/23758ce629.js" crossorigin="anonymous"></script>
+        <script data-search-pseudo-elements src="https://kit.fontawesome.com/f737751420.js" crossorigin="anonymous"></script>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Alexis Blanchard" />
+        <meta name="description" content="Booki est un site de recherche d'hébergements ou d'activités à proximité" />
+    </head>
+
+    <body>
+        <header>
+            <div id="logo">
+                <img src="images/logo/Booki@3x.png" alt="Logo de Booki">
+            </div>
+
+            <nav>
+                <a href="#hostSection">
+                    Hébergements
+                </a>
+
+                <a href="#activitySection">
+                    Activités
+                </a>
+            </nav>
+        </header>
+        
+        <main>
+            <section id="seekSection">
+                <h1>
+                    Trouvez votre hébergement pour des vacances de rêve
+                </h1>
+                
+                <p>
+                    En plein centre ville ou en pleine nature
+                </p>
+
+                <div id="searchBar">
+                    <form id="searchForm" method="post" action="traitement.php">
+                        <button id="locationDot" type="submit">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+
+                        <input id="searchInput" type="text" name="search" placeholder="Entrez votre recherche" value="Marseille, France" size="16" />
+
+                        <button id="searchButtonBig" type="submit">
+                            Rechercher
+                        </button>
+
+                        <button id="searchButtonSmall" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <section id="filterSection">
+                    <h2>
+                        Filtres
+                    </h2>
+
+                    <form id="filterForm" method="post" action="traitement.php">
+                        <label class="filtersButton">
+                            <input type="checkbox">
+
+                            <span class=filtersIcons >
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                            </span>
+
+                            <span class=filtersName>
+                                Économique
+                            </span>
+                        </label>
+
+                        <label class="filtersButton">
+                            <input type="checkbox">
+
+                            <span class=filtersIcons >
+                                <i class="fa-solid fa-child-reaching"></i>
+                            </span>
+
+                            <span class=filtersName>
+                                Familial
+                            </span>
+                        </label>
+
+                        <label class="filtersButton">
+                            <input type="checkbox">
+
+                            <span class=filtersIcons >
+                                <i class="fa-solid fa-heart"></i>
+                            </span>
+
+                            <span class=filtersName>
+                                Romantique
+                            </span>
+                        </label>
+
+                        <label class="filtersButton">
+                            <input type="checkbox">
+
+                            <span class=filtersIcons >
+                                <i class="fa-solid fa-dog">
+                                </i>
+                            </span>
+
+                            <span class=filtersName>
+                                Animaux autorisés
+                            </span>
+                        </label>
+                    </form>
+                </section>
+
+                <div id="infoLine">
+                    <span id="infoDot">
+                        <i class="fa-solid fa-info"></i>
+                    </span>
+
+                    <p>
+                        Plus de 500 logements sont disponibles dans cette ville
+                    </p>
+                </div>
+            </section>
+
+            <section id="hostAndPopular">
+                <section id="hostBackground">
+                    <h2>
+                        Hébergements à Marseille
+                    </h2>
+                    <section id="hostSection">
+                        <a class="hostCard" href="index.html">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre de l'Auberge la Cannebiere">
+
+                            <div class="hostDescription">
+                                <h3>
+                                    Aubèrge La Cannebière
+                                </h3>
+
+                                <p>Nuit à partir de 
+                                    <span class="coolPrice">
+                                        25
+                                    </span>
+                                    <span class="euro">
+                                        €
+                                    </span>
+                                </p>
+
+                                <div id="starsH1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="hostLink" href="index.html">
+                            <article class="hostCard">
+                                <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre de l'Hôtel du port">
+
+                                <div class="hostDescription">
+                                    <h3>
+                                        Hôtel du port
+                                    </h3>
+
+                                    <p>
+                                        Nuit à partir de 
+                                        <span>
+                                            52
+                                        </span>
+                                        <span class="euro">
+                                            €
+                                        </span>
+                                    </p>
+
+                                    <div id="starsH2">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+
+                        <a class="hostLink" href="index.html">
+                            <article class="hostCard">
+                                <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre de l'Hôtel Les mouettes">
+
+                                <div class="hostDescription">
+                                    <h3>
+                                        Hôtel Les mouettes
+                                    </h3>
+
+                                    <p>
+                                        Nuit à partir de 
+                                        <span>
+                                            76
+                                        </span>
+                                        <span class="euro">
+                                            €
+                                        </span>
+                                    </p>
+
+                                    <div id="starsH3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+
+                        <a class="hostLink" href="index.html">
+                            <article class="hostCard">
+                                <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre de l'Hôtel de la mer">
+
+                                <div class="hostDescription">
+                                    <h3>
+                                        Hôtel de la mer
+                                    </h3>
+
+                                    <p>
+                                        Nuit à partir de 
+                                        <span>
+                                            46
+                                        </span>
+                                        <span class="euro">
+                                            €
+                                        </span>
+                                    </p>
+
+                                    <div id="starsH4">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+
+                        <a class="hostLink" href="index.html">
+                            <article class="hostCard">
+                                <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Chambre de l'Aubèrge Le Panier">
+
+                                <div class="hostDescription">
+                                    <h3>
+                                        Aubèrge Le Panier
+                                    </h3>
+
+                                    <p>
+                                        Nuit à partir de 
+                                        <span class="coolPrice">
+                                            23
+                                        </span>
+                                        <span class="euro">
+                                            €
+                                        </span>
+                                    </p>
+
+                                    <div id="starsH5">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+
+                        <a class="hostLink" href="index.html">
+                            <article class="hostCard">
+                                <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Chambre de l'Hôtel chez Amina">
+                                <div class="hostDescription">
+                                    <h3>
+                                        Hôtel chez Amina
+                                    </h3>
+
+                                    <p>
+                                        Nuit à partir de 
+                                        <span>
+                                            96
+                                        </span>
+                                        <span class="euro">
+                                            €
+                                        </span>
+                                    </p>
+
+                                    <div id="starsH6">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </section>
+
+                    <p id="showMore">
+                        <a href="index.html">
+                        Afficher plus
+                        </a>
+                    </p>
+                </section>
+
+                <section id="popularSection">
+                    <h2>
+                        Les plus populaires
+                    </h2>
+
+                    <a class="popularLink" href="index.html">
+                        <article class="popular">
+                            <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre de l'Hôtel Le soleil du matin">
+                            <div class="popularDescription">
+                                <div>
+                                    <h3>Hôtel Le soleil du matin</h3>
+                                    <p>Nuit à partir de <span>128</span><span class="euro">€</span></p>
+                                </div>
+                                
+                                <div id="starsP1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                    <article class="popularHost">
+                    </article>
+
+                    <article class="popularHost">
+                    </article>
+                </section>
+            </section>
+
+            <section id="activitySection">
+                <h2>
+                    Activités à Marseille
+                </h2>
+
+                <div id="allActivity">
+                    <article class="activityArticle">
+                    </article>
+
+                    <div class="activityColumn">
+                        <article class="activityArticle">
+                        </article>
+
+                        <article class="activityArticle">
+                        </article>
+                    </div>
+
+                    <article class="activityArticle">
+                    </article>
+
+                    <div class="activityColumn">
+                        <article class="activityArticle">
+                        </article>
+
+                        <article class="activityArticle">
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+        </footer>
+    </body>
+</html>
+
