@@ -272,8 +272,7 @@ input[type=checkbox] {
 
 #hostSection {
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
+    flex-direction: column;
     justify-content: space-between;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -283,18 +282,29 @@ input[type=checkbox] {
 }
 
 #hostSection h2 {
-    width: 100%;
     margin: 0;
 }
 
-.hostCard {
+#hostList {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80%;
+}
+
+.hostLink {
     width: 246px;
     height: 200px;
     text-decoration: none;
     color: black;
 }
 
-.hostCard {
+.hostLink {
     display: flex;
     flex-direction: column;
     width: 246px;
@@ -303,7 +313,7 @@ input[type=checkbox] {
     color: black;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 0px #d9d9d9;
+    box-shadow: 0px 0px 15px 3px #d9d9d9;
 }
 
 .hostCard img {
@@ -356,13 +366,20 @@ input[type=checkbox] {
 
 .euro {
     font-weight: 600;
+    font-size: small;
 }
 
-#showMore {
+#showMoreLink {
     text-decoration: none;
     color: black;
     font-weight: 700;
     font-size: 110%;
+    margin: 1% 0 1% 0.5%;
+    width: 106px;
+}
+
+#showMoreLink:hover {
+    color: #0065FC;
 }
 
 
@@ -395,7 +412,7 @@ input[type=checkbox] {
     justify-content: space-between;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 2.5%;
+    padding: 3% 2.5% 3% 2.5%;
 }
 
 #popularSection h2 {
@@ -414,7 +431,7 @@ input[type=checkbox] {
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0px 0px 10px 0px #d9d9d9;
+    box-shadow: 0px 0px 15px 3px #d9d9d9;
 }
 
 .popularCard img {
@@ -464,7 +481,7 @@ input[type=checkbox] {
 }
 
 
-/* Etoiles Popuaires */
+/* Etoiles Populaires */
 
 #starsP2 :nth-child(5) {
     color: #d9d9d9;
