@@ -33,7 +33,7 @@ main {
 
 h1, h2 {
     font-size: 22px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 footer {
@@ -164,7 +164,7 @@ form h1 {
 
 #filterSection h2 {
     font-size: 17px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 input[type=checkbox] {
@@ -207,7 +207,7 @@ input[type=checkbox] {
     cursor: pointer;
     position: relative;
     font-size: 17px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .filtersButton:hover input ~ .filtersName {
@@ -335,6 +335,10 @@ input[type=checkbox] {
     font-size: 90%;
 }
 
+.hostDescription div {
+    display: flex;
+}
+
 .hostCard:hover {
     -ms-transform: scale(1.05); /* IE 9 */
     -webkit-transform: scale(1.05); /* Safari 3-8 */
@@ -378,8 +382,20 @@ input[type=checkbox] {
 /* Populaires */
 
 #popularSection {
-    border: #0065FC solid 1px;
     width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+#popularSection h2 {
+    width: 344px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .popularCard {
@@ -388,18 +404,17 @@ input[type=checkbox] {
     text-decoration: none;
     color: black;
     display: flex;
-    background-color: #DEEBFF;
-    margin-bottom: 10px;
+    background-color: white;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px 0px #d9d9d9;
 }
 
 .popularCard img {
-    width: 128px;
+    width: 138px;
     height: 145px;
     object-fit: cover;
-    border: #DEEBFF solid 5px;
+    border: white solid 5px;
     border-radius: 20px 0 0 20px;
     object-position: center;
 }
@@ -425,6 +440,10 @@ input[type=checkbox] {
     font-size: 90%;
 }
 
+.popularDescription div:nth-child(2) {
+    display: flex;
+}
+
 .popularCard:hover {
     -ms-transform: scale(1.05); /* IE 9 */
     -webkit-transform: scale(1.05); /* Safari 3-8 */
@@ -437,3 +456,13 @@ input[type=checkbox] {
     color: #0065FC;
 }
 
+
+/* Etoiles Popuaires */
+
+#starsP2 :nth-child(5) {
+    color: #d9d9d9;
+}
+
+#starsP3 :nth-child(5) {
+    color: #d9d9d9;
+}
