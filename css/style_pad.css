@@ -46,3 +46,28 @@ main {
     padding: 15px 15px 0px 60px;
     font-size: 15px;
 }
+
+/* Hébergements */
+
+#hostAndPopular {
+    flex-direction: column-reverse;
+    height: auto;
+}
+
+#popularSection {
+    width: 100%;
+    padding: 20px;
+}
+
+#popularSection h2 {
+    margin: 25px;
+}
+
+.popularCard {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#hostSection {
+    width: 100%;
+}
