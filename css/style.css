@@ -289,12 +289,11 @@ input[type=checkbox] {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 80%;
+    gap: 30px;
 }
 
 .hostLink {
@@ -416,14 +415,14 @@ input[type=checkbox] {
 }
 
 #popularSection h2 {
-    width: 344px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 0;
 }
 
 .popularCard {
-    width: 344px;
+    width: 100%;
     height: 144px;
     text-decoration: none;
     color: black;
@@ -436,7 +435,7 @@ input[type=checkbox] {
 
 .popularCard img {
     width: 138px;
-    height: 145px;
+    height: 144px;
     object-fit: cover;
     border: white solid 5px;
     border-radius: 20px 0 0 20px;
