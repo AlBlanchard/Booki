@@ -54,6 +54,19 @@ main {
     height: auto;
 }
 
+#hostSection {
+    width: 100%;
+}
+
+#hostList {
+    justify-content: center;
+}
+
+.hostCard {
+    width: 45%;
+    height: 220px;
+}
+
 #popularSection {
     width: 100%;
     padding: 20px;
@@ -66,8 +79,7 @@ main {
 .popularCard {
     margin-top: 2%;
     margin-bottom: 2%;
+    max-width: 75%;
+    height: 160px;
 }
 
-#hostSection {
-    width: 100%;
-}

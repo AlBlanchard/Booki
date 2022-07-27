@@ -213,6 +213,6 @@ nav a:hover {
 .popularCard {
     margin-top: 2%;
     margin-bottom: 2%;
-    max-width: 334px
+    height: 144px;
 }
 
