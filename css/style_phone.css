@@ -164,6 +164,7 @@ nav a:hover {
 #hostAndPopular {
     flex-direction: column-reverse;
     height: auto;
+    gap: 0;
 }
 
 #hostSection {
@@ -201,12 +202,13 @@ nav a:hover {
 }
 
 #popularSection h2 {
-    margin: 25px;
+    max-width: 100%;
 }
 
 .popularCard {
     margin-top: 2%;
     margin-bottom: 2%;
     height: 144px;
+    max-width: 465px;
 }
 
