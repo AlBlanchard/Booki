@@ -47,15 +47,44 @@ main {
     font-size: 15px;
 }
 
-/* Hébergements */
+/* Hébergements et Populaires */
 
 #hostAndPopular {
     flex-direction: column-reverse;
     height: auto;
+    align-items: center;
+    gap: 30px;
 }
 
+
+/* Populaires */
+
+#popularSection {
+    width: 95%;
+    padding: 20px;
+    max-height: none;
+}
+
+#popularSection h2 {
+    margin: 25px;
+}
+
+.popularCard {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    max-width: 70%;
+    height: 160px;
+}
+
+#popularSection h2 {
+    max-width: 70%;
+}
+
+
+/* Hébergements */
+
 #hostSection {
-    width: 100%;
+    width: 95%;
 }
 
 #hostList {
@@ -66,20 +95,3 @@ main {
     width: 45%;
     height: 220px;
 }
-
-#popularSection {
-    width: 100%;
-    padding: 20px;
-}
-
-#popularSection h2 {
-    margin: 25px;
-}
-
-.popularCard {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    max-width: 75%;
-    height: 160px;
-}
-

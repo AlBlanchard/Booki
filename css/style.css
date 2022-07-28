@@ -14,8 +14,8 @@
 
 body {
     margin-right: auto;
-    /* max-width: 1440px; */
-    /* height: 1884px; */
+    max-width: 1440px;
+    height: 1884px;
     font-family: 'Raleway', sans-serif;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -159,12 +159,13 @@ form h1 {
 
 #filterSection {
     display: flex;
-    gap: 24px;
+    gap: 28px;
 }
 
 #filterSection h2 {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 700;
+    margin-left: 15px;
 }
 
 input[type=checkbox] {
@@ -269,7 +270,7 @@ input[type=checkbox] {
     justify-content: space-between;
     width: 100%;
     min-height: 628px;
-    height: 43.61vw;
+    /* height: 43.61vw; Test pour garder à l'échelle */
 }
 
 #hostSection {
@@ -295,14 +296,14 @@ input[type=checkbox] {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 80%;
     gap: 30px 3.8%;
 }
 
 .hostCard {
     /* width: 246px; */
     width: 30.8%;
-    height: 46.38%;
+    /* height: 46.38%; */
+    height: 199px;
 }
 
 .hostLink {
@@ -327,7 +328,7 @@ input[type=checkbox] {
 }
 
 .hostDescription {
-    padding-left: 3%;
+    padding-left: 5%;
     background-color: white;
     height: 37.5%;
     border-right: white solid 5px;
@@ -347,7 +348,7 @@ input[type=checkbox] {
 .hostDescription p {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 90%;
+    font-size: 87%;
 }
 
 .hostDescription div {
@@ -371,8 +372,8 @@ input[type=checkbox] {
 }
 
 .euro {
-    font-weight: 600;
-    font-size: small;
+    font-weight: 700;
+    font-size: 95%;
 }
 
 #showMoreLink {
@@ -380,7 +381,7 @@ input[type=checkbox] {
     color: black;
     font-weight: 700;
     font-size: 110%;
-    margin: 1% 0 1% 0.5%;
+    margin: 2% 0 1% 0.5%;
     width: 106px;
 }
 
@@ -417,8 +418,8 @@ input[type=checkbox] {
     justify-content: space-between;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 3% 2.5% 3% 2.5%;
-    /* max-height: 628px; */
+    padding: 3% 2.8% 3% 2.8%;
+    max-height: 628px; /* Pour les plus petits écrans */
 }
 
 #popularSection h2 {
@@ -443,8 +444,7 @@ input[type=checkbox] {
 .popularCard {
     width: 100%;
     /* max-width: 343px; */
-    /* height: 144px; */
-    height: 22.84%;
+    height: 144px;
 }
 
 .popularLink {
@@ -473,7 +473,11 @@ input[type=checkbox] {
     width: 60%;
     height: 100%;
     justify-content: space-between;
-    padding: 10px 0 10px 15px;
+    border-top: white solid 5px;
+    border-right: white solid 5px;
+    border-bottom: white solid 5px;
+    border-radius: 0px 20px 20px 0px;
+    padding: 10px 15px 10px 15px;
 }
 
 .popularDescription h3 {
@@ -485,7 +489,7 @@ input[type=checkbox] {
 .popularDescription p {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 90%;
+    font-size: 87%;
 }
 
 .popularDescription div:nth-child(2) {
@@ -502,6 +506,7 @@ input[type=checkbox] {
 .popularDescription div:nth-child(2) {
     font-size: 75%;
     color: #0065FC;
+    margin-bottom: 1.5%;
 }
 
 
@@ -515,7 +520,7 @@ input[type=checkbox] {
     color: #d9d9d9;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1205px) {
     .hostCard {
         width: 48%;
     }
