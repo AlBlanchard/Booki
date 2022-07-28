@@ -1,8 +1,6 @@
 body {
     margin-left: 0;
     margin-right: 0;
-    max-width: 960px;
-    font-family: 'Raleway', sans-serif;
 }
 
 main {
@@ -43,7 +41,7 @@ main {
 }
 
 .filtersName {
-    padding: 15px 15px 0px 60px;
+    padding: 0 15px 0px 60px;
     font-size: 15px;
 }
 
