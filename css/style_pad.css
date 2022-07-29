@@ -58,7 +58,7 @@ main {
 /* Populaires */
 
 #popularSection {
-    width: 100%;
+    width: 95%;
     padding: 20px;
     max-height: none;
 }
@@ -79,7 +79,7 @@ main {
 /* Hébergements */
 
 #hostSection {
-    width: 100%;
+    width: 95%;
 }
 
 #hostList {
@@ -90,3 +90,42 @@ main {
     width: 45%;
     height: 220px;
 }
+
+/* Activités */
+
+#activitySection {
+    margin: 2.5%;
+}
+
+#activityList {
+    height: 941px;
+    gap: 0px 0px;
+}
+
+.activityCard {
+    width: 46.8%;
+}
+
+.activityCard:nth-child(3n+1) /* Selection card 1 et 4 */ {
+    flex-basis: 449px;
+}
+
+.activityCard:nth-child(2) {
+    order: 4;
+}
+
+.activityCard:nth-child(3) {
+    order: 5;
+}
+
+.activityCard:nth-child(4) {
+    order: 5;
+}
+
+.activityCard:nth-child(5) {
+    order: 2;
+}
+
+.activityCard:nth-child(6) {
+    order: 3
+} 
