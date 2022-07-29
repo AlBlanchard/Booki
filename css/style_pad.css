@@ -58,7 +58,7 @@ main {
 /* Populaires */
 
 #popularSection {
-    width: 95%;
+    width: 100%;
     padding: 20px;
     max-height: none;
 }
@@ -79,7 +79,7 @@ main {
 /* Hébergements */
 
 #hostSection {
-    width: 95%;
+    width: 100%;
 }
 
 #hostList {

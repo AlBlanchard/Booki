@@ -15,7 +15,7 @@
 body {
     margin-right: auto;
     max-width: 1440px;
-    height: 1884px;
+    /* height: 1884px; */
     font-family: 'Raleway', sans-serif;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -520,4 +520,108 @@ input[type=checkbox] {
     #showMoreLink {
         margin: 5% 0 1% 0.5%;
     }
+}
+
+/* Activités */
+
+.activityList {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    height: 445px;
+    gap: auto 43px;
+}
+
+.activityCard {
+    width: 22.6%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 4px #F2F2F2;
+}
+
+.activityCard:nth-child(3n+1) /* Selection card 1 et 4 */ {
+    flex-basis: 100%;
+}
+
+.activityCard:nth-child(2) {
+    flex-basis: 237px;
+}
+
+.activityCard:nth-child(3) {
+    flex-basis: 165px;
+}
+
+.activityCard:nth-child(5) {
+    flex-basis: 196px;
+}
+
+.activityCard:nth-child(6) {
+    flex-basis: 210px;
+} 
+
+.activityImageBorder {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    flex-shrink: 1;
+    flex-grow: 0;
+    display: flex;
+    position: relative;
+
+}
+
+.activityCard img {
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.activityCard:nth-child(3n+1) img /* Selection Image card 1 et 4 */ {
+    height: 114%;
+    transform: translate(-50%, -44%);
+}
+
+.activityCard:nth-child(2) img {
+    height: 252%;
+    transform: translate(-50%, -44%);
+}
+
+ .activityCard:nth-child(3) img {
+    height: 185%;
+    transform: translate(-50%, -37%);
+}
+
+.activityCard:nth-child(5) img {
+    height: 142%;
+    transform: translate(-50%, -36%);
+}
+
+.activityCard:nth-child(6) img {
+    height: 148%;
+    transform: translate(-50%, -38%);
+}
+
+.activityDescription {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    flex-shrink: 0;
+}
+
+.activityDescription h3 {
+    margin: 0;
+    width: 100%;
+    font-size: 100%;
+    font-weight: 800;
+    padding-left: 18px;
+    padding-right: 18px;
 }
