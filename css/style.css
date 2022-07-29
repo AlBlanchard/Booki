@@ -586,6 +586,7 @@ input[type=checkbox] {
     left: 50%;
     object-fit: cover;
     position: absolute;
+    image-rendering: smooth;
 }
 
 .activityCard:nth-child(3n+1) img /* Selection Image card 1 et 4 */ {
@@ -595,18 +596,22 @@ input[type=checkbox] {
 }
 
 .activityCard:nth-child(2) img {
+    height: 252%;
     transform: translate(-50%, -44%);
 }
 
  .activityCard:nth-child(3) img {
+    height: 185%;
     transform: translate(-50%, -37%);
 }
 
 .activityCard:nth-child(5) img {
+    height: 142%;
     transform: translate(-50%, -36%);
 }
 
 .activityCard:nth-child(6) img {
+    height: 148%;
     transform: translate(-50%, -38%);
 }
 
