@@ -392,7 +392,8 @@ input[type=checkbox] {
     color: #0065FC;
 }
 
-/* Etoiles Hébergement */
+
+/* Etoiles */
 
 .stars {
     color: #0065FC;
@@ -505,15 +506,7 @@ input[type=checkbox] {
 }
 
 
-/* Etoiles Populaires */
-
-#starsP2 :nth-child(5) {
-    color: #d9d9d9;
-}
-
-#starsP3 :nth-child(5) {
-    color: #d9d9d9;
-}
+/* Responsive pour les petits écrans d'ordi */
 
 @media (max-width: 1205px) {
     .hostCard {
