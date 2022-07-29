@@ -80,15 +80,26 @@ main {
 
 #hostSection {
     width: 95%;
+    align-items: center;
+}
+
+#hostSection h2 {
+    width: 90%;
+    margin: 25px;
 }
 
 #hostList {
-    justify-content: center;
+    width: 90%;
+    justify-content: space-between;
 }
 
 .hostCard {
-    width: 45%;
+    width: 47.5%;
     height: 220px;
+}
+
+#showMore {
+    width: 90%;
 }
 
 /* Activités */
