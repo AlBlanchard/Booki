@@ -120,6 +120,7 @@ form h1 {
     padding: 14px;
     border-radius: 16px 0px 0px 16px;
     text-align: center;
+    cursor: pointer;
 }
 
 #searchInput {
@@ -379,12 +380,15 @@ input[type=checkbox] {
     font-size: 95%;
 }
 
+#showMore {
+    margin: 2% 0 1% 0.5%;
+}
+
 #showMoreLink {
     text-decoration: none;
     color: black;
     font-weight: 700;
     font-size: 110%;
-    margin: 2% 0 1% 0.5%;
     width: 106px;
 }
 
@@ -517,7 +521,7 @@ input[type=checkbox] {
         margin: 0 0 5% 0;
     }
 
-    #showMoreLink {
+    #showMore {
         margin: 5% 0 1% 0.5%;
     }
 }
