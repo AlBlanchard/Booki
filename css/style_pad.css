@@ -91,6 +91,7 @@ main {
 #hostList {
     width: 90%;
     justify-content: space-between;
+    gap: 30px 3.8%;
 }
 
 .hostCard {

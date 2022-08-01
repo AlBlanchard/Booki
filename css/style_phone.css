@@ -165,6 +165,7 @@ nav a:hover {
     flex-direction: column-reverse;
     height: auto;
     gap: 0;
+    margin-bottom: 30px;
 }
 
 #hostSection {
@@ -195,8 +196,9 @@ nav a:hover {
     max-width: 465px;
 }
 
-#showMoreLink {
-    margin: 20px 0 0 0;
+#showMore {
+    width: 100%;
+    margin: 28px 0 0 0;
 }
 
 #popularSection {
@@ -220,7 +222,7 @@ nav a:hover {
 
 #activitySection {
     margin: 0;
-    padding: 20px;
+    padding: 0 20px 0 20px;
 }
 
 #activitySection h2 {

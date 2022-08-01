@@ -275,6 +275,7 @@ input[type=checkbox] {
     justify-content: space-between;
     width: 100%;
     min-height: 628px;
+    margin-bottom: 62px;
 }
 
 #hostSection {
@@ -418,7 +419,7 @@ input[type=checkbox] {
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 3% 2.8% 3% 2.8%;
-    max-height: 628px; /* Pour les plus petits écrans */
+    /* max-height: 628px; /* Pour les plus petits écrans */
 }
 
 #popularSection h2 {
@@ -442,7 +443,7 @@ input[type=checkbox] {
 
 .popularCard {
     width: 100%;
-    min-width: 264px;
+    min-width: 240px;
     /* max-width: 343px; */
     height: 144px;
 }
@@ -477,7 +478,7 @@ input[type=checkbox] {
     border-right: white solid 5px;
     border-bottom: white solid 5px;
     border-radius: 0px 20px 20px 0px;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 5px 10px 15px;
 }
 
 .popularDescription h3 {
@@ -513,6 +514,10 @@ input[type=checkbox] {
 /* Responsive pour les petits écrans d'ordi */
 
 @media (max-width: 1205px) {
+    #hostList {
+        gap: 20px 3.8%;
+    }
+
     .hostCard {
         width: 48%;
     }
@@ -524,9 +529,26 @@ input[type=checkbox] {
     #showMore {
         margin: 5% 0 1% 0.5%;
     }
+
+    #popularSection {
+        justify-content: flex-start;
+    }
+
+    #popularSection h2 {
+        margin: 0 0 12% 0;
+    }
+
+    #popularList {
+        justify-content: flex-start;
+        gap: 6%;
+    }
 }
 
 /* Activités */
+
+#activitySection h2 {
+    margin: 0 0 20px 0;
+}
 
 #activityList {
     margin: 0;
@@ -667,4 +689,5 @@ input[type=checkbox] {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
-  }
+    padding: 10px;
+}
