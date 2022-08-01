@@ -178,17 +178,21 @@ nav a:hover {
 }
 
 #hostSection h2 {
+    width: 100%;
     margin: 25px 0 25px 0;
 }
 
 #hostList {
+    width: 100%;
     flex-direction: column;
     align-items: center;
+    gap: 12.5px 3.8%;
 }
 
 .hostCard {
     width: 100%;
-    max-width: 334px;
+    height: 200px;
+    max-width: 465px;
 }
 
 #showMoreLink {
@@ -211,4 +215,56 @@ nav a:hover {
     height: 144px;
     max-width: 465px;
 }
+
+/* Activités */
+
+#activitySection {
+    margin: 0;
+    padding: 20px;
+}
+
+#activitySection h2 {
+    width: 100%;
+}
+
+#activityList {
+    width: 100%;
+    height: auto;
+    gap: 24px 0px;
+    align-content: center;
+}
+
+.activityCard {
+    width: 100%;
+    max-width: 465px;
+}
+
+.activityCard:nth-child(3n+1) /* Selection card 1 et 4 */ {
+    flex-basis: 190px;
+}
+
+.activityCard:nth-child(2) {
+    order: 2;
+    flex-basis: 190px;
+}
+
+.activityCard:nth-child(3) {
+    order: 3;
+    flex-basis: 190px;
+}
+
+.activityCard:nth-child(4) {
+    order: 4;
+}
+
+.activityCard:nth-child(5) {
+    order: 5;
+    flex-basis: 190px;
+}
+
+.activityCard:nth-child(6) {
+    order: 6;
+    flex-basis: 190px;
+}
+
 
