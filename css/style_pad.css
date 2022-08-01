@@ -146,11 +146,12 @@ main {
 /* Footer */
 
 footer {
-    padding: 45px 50px 45px 50px;
+    padding: 45px 0px 45px 0px;
     justify-content: space-between
 }
 
 footer ul {
     min-width: 230px;
-    margin-right: 45px;
+    margin-left: 50px;
+    flex-basis: auto;
 }
