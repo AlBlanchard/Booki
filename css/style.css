@@ -36,13 +36,6 @@ h1, h2 {
     font-weight: 700;
 }
 
-footer {
-    width: 100%;
-    height: 12%;
-    border: #0065FC solid 1px;
-}
-
-
 /* Header et navigation */
 
 header {
@@ -546,6 +539,10 @@ input[type=checkbox] {
 
 /* Activités */
 
+#activitySection {
+    margin-bottom: 60px;
+}
+
 #activitySection h2 {
     margin: 0 0 20px 0;
 }
@@ -595,6 +592,7 @@ input[type=checkbox] {
     height: 100%;
     display: flex;
     flex-direction: column;
+    color: black;
 }
 
 .activityImageBorder {
@@ -690,4 +688,42 @@ input[type=checkbox] {
     text-align: center;
     width: 100%;
     padding: 10px;
+}
+
+/* Footer */
+
+footer {
+    height: 218px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 50px 45px 50px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0 0 0 0px;
+    margin: 0;
+    flex-basis: 32.5%;
+}
+
+footer li {
+    margin-bottom: 12px;
+}
+
+footer h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 21px 0;
+}
+
+footer a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: #0065FC;
 }

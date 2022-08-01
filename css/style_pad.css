@@ -107,6 +107,7 @@ main {
 
 #activitySection {
     margin: 2.5%;
+    margin-bottom: 60px;
 }
 
 #activityList {
@@ -141,3 +142,15 @@ main {
 .activityCard:nth-child(6) {
     order: 3
 } 
+
+/* Footer */
+
+footer {
+    padding: 45px 50px 45px 50px;
+    justify-content: space-between
+}
+
+footer ul {
+    min-width: 230px;
+    margin-right: 45px;
+}
