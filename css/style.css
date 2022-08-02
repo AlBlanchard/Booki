@@ -678,21 +678,28 @@ footer {
     padding: 45px 50px 45px 50px;
 }
 
-footer ul {
-    list-style-type: none;
-    padding: 0 0 0 0px;
-    margin: 0;
+footer section {
     flex-basis: 32.5%;
 }
 
-footer li {
-    margin-bottom: 12px;
+#assist {
+    padding-left: 4px;
 }
 
 footer h3 {
     font-size: 18px;
     font-weight: 700;
     margin: 0 0 21px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0 0 0 0px;
+    margin: 0;
+}
+
+footer li {
+    margin-bottom: 13px;
 }
 
 footer a {

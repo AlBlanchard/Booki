@@ -351,13 +351,18 @@ nav a:hover {
 footer {
     flex-direction: column;
     height: 486px;
-    padding: 45px 28px 45px 28px;
+    padding: 45px 28px 35px 28px;
     margin: 0;
 }
 
-footer ul {
+footer section {
     flex-basis: auto;
-    margin-bottom: 0px;
+    margin: 0;
+}
+
+#ourHost {
+    margin-bottom: 10px;
+    padding-left: 4px;
 }
 
 footer li {
