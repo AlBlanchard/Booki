@@ -323,6 +323,7 @@ nav a:hover {
 
 .activityCard:nth-child(3n+1) img /* Selection Image card 1 et 4 */ {
     height: auto;
+    min-height: 140%;
     transform: translate(-50%, -38%);
 }
 
@@ -333,16 +334,19 @@ nav a:hover {
 
 .activityCard:nth-child(3) img {
     height: auto;
+    min-height: 140%;
     transform: translate(-50%, -37%);
 }
 
 .activityCard:nth-child(5) img {
     height: auto;
+    min-height: 140%;
     transform: translate(-50%, -36%);
 }
 
 .activityCard:nth-child(6) img {
     height: auto;
+    min-height: 140%;
     transform: translate(-50%, -38%);
 }
 
