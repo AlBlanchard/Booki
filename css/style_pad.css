@@ -51,26 +51,6 @@ main {
 }
 
 
-/*----------------------------------- Populaires -----------------------------------*/
-
-#popularSection {
-    width: 95%;
-    padding: 20px;
-}
-
-#popularSection h2 {
-    margin: 25px;
-    max-width: 70%;
-}
-
-.popularCard {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    max-width: 70%;
-    height: 160px;
-}
-
-
 /*----------------------------------- Hébergements -----------------------------------*/
 
 #hostSection {
@@ -95,6 +75,27 @@ main {
 #showMore {
     width: 90%;
 }
+
+
+/*----------------------------------- Populaires -----------------------------------*/
+
+#popularSection {
+    width: 95%;
+    padding: 20px;
+}
+
+#popularSection h2 {
+    margin: 25px;
+    max-width: 70%;
+}
+
+.popularCard {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    max-width: 70%;
+    height: 160px;
+}
+
 
 /*----------------------------------- Activités -----------------------------------*/
 
@@ -134,6 +135,7 @@ main {
 .activityCard:nth-child(6) {
     order: 3
 } 
+
 
 /*----------------------------------- Footer -----------------------------------*/
 
