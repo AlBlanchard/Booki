@@ -9,7 +9,7 @@ main {
     height: auto;
 }
 
-/* Recherche */
+/*----------------------------------- Recherche -----------------------------------*/
 
 #seekSection {
     margin-right: 0;
@@ -20,12 +20,11 @@ main {
 }
 
 
-/* Filtres */
+/*----------------------------------- Filtres -----------------------------------*/
 
 #filterSection {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0px;
 }
 
 #filterSection h2 {
@@ -36,7 +35,6 @@ main {
 #filterForm {
     justify-content: space-around;
     width: 100%;
-    gap: 0;
 }
 
 .filtersName {
@@ -44,22 +42,20 @@ main {
     font-size: 16px;
 }
 
-/* Hébergements et Populaires */
+/*----------------------------------- Hébergements et Populaires -----------------------------------*/
 
 #hostAndPopular {
     flex-direction: column-reverse;
-    height: auto;
     align-items: center;
     gap: 30px;
 }
 
 
-/* Populaires */
+/*----------------------------------- Populaires -----------------------------------*/
 
 #popularSection {
     width: 95%;
     padding: 20px;
-    max-height: none;
 }
 
 #popularSection h2 {
@@ -75,7 +71,7 @@ main {
 }
 
 
-/* Hébergements */
+/*----------------------------------- Hébergements -----------------------------------*/
 
 #hostSection {
     width: 95%;
@@ -90,11 +86,9 @@ main {
 #hostList {
     width: 90%;
     justify-content: space-between;
-    gap: 30px 3.8%;
 }
 
 .hostCard {
-    width: 47.5%;
     height: 220px;
 }
 
@@ -102,16 +96,15 @@ main {
     width: 90%;
 }
 
-/* Activités */
+/*----------------------------------- Activités -----------------------------------*/
 
 #activitySection {
     margin: 2.5%;
-    margin-bottom: 60px;
 }
 
 #activityList {
     height: 941px;
-    gap: 0px 0px;
+    gap: 0 0;
 }
 
 .activityCard {
@@ -142,15 +135,21 @@ main {
     order: 3
 } 
 
-/* Footer */
+/*----------------------------------- Footer -----------------------------------*/
 
 footer {
-    padding: 45px 0px 45px 0px;
-    justify-content: space-between
+    padding: 45px 10px 45px 50px;
 }
 
 footer section {
     min-width: 230px;
-    margin-left: 50px;
-    flex-basis: auto;
+    flex-basis: content;
+}
+
+#ourHost {
+    padding-left: 40px;
+}
+
+#assist {
+    padding-left: 40px;
 }

@@ -1,4 +1,4 @@
-/* Paramètres initiaux */
+/*----------------------------------- Paramètres initiaux -----------------------------------*/
 
 * {
     -webkit-box-sizing: border-box;
@@ -36,7 +36,7 @@ h1, h2 {
     font-weight: 700;
 }
 
-/* Header et navigation */
+/*----------------------------------- Header et navigation -----------------------------------*/
 
 header {
     margin-left: 50px;
@@ -89,7 +89,7 @@ nav a:hover {
 }
 
 
-/* Recherche */
+/*----------------------------------- Recherche -----------------------------------*/
 
 #seekSection {
     margin-left: 0;
@@ -162,7 +162,7 @@ nav a:hover {
 }
 
 
-/* Filtres */
+/*----------------------------------- Filtres -----------------------------------*/
 
 #filterSection {
     display: flex;
@@ -246,7 +246,7 @@ input[type=checkbox] {
 }
 
 
-/* Barre d'info */
+/*----------------------------------- Barre d'info -----------------------------------*/
 
 #infoLine {
     margin: 37px 0px 37px 10px;
@@ -273,7 +273,7 @@ input[type=checkbox] {
 }
 
 
-/* Hébergements */
+/*----------------------------------- Hébergements -----------------------------------*/
 
 #hostAndPopular {
     display: flex;
@@ -311,9 +311,7 @@ input[type=checkbox] {
 }
 
 .hostCard {
-    /* width: 246px; */
     width: 30.8%;
-    /* height: 46.38%; */
     height: 199px;
 }
 
@@ -401,7 +399,7 @@ input[type=checkbox] {
 }
 
 
-/* Etoiles */
+/*----------------------------------- Etoiles -----------------------------------*/
 
 .stars {
     color: #0065FC;
@@ -411,7 +409,7 @@ input[type=checkbox] {
     color: #d9d9d9;
 }
 
-/* Populaires */
+/*----------------------------------- Populaires -----------------------------------*/
 
 #popularSection {
     width: 31.3%;
@@ -422,7 +420,6 @@ input[type=checkbox] {
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 3% 2.8% 3% 2.8%;
-    /* max-height: 628px; /* Pour les plus petits écrans */
 }
 
 #popularSection h2 {
@@ -448,7 +445,6 @@ input[type=checkbox] {
 .popularCard {
     width: 100%;
     min-width: 240px;
-    /* max-width: 343px; */
     height: 144px;
 }
 
@@ -514,7 +510,7 @@ input[type=checkbox] {
     margin-bottom: 1.5%;
 }
 
-/* Activités */
+/*----------------------------------- Activités -----------------------------------*/
 
 #activitySection {
     margin-bottom: 60px;
@@ -668,7 +664,7 @@ input[type=checkbox] {
     padding: 10px;
 }
 
-/* Footer */
+/*----------------------------------- Footer -----------------------------------*/
 
 footer {
     height: 218px;
@@ -713,7 +709,7 @@ footer a:hover {
     color: #0065FC;
 }
 
-/* Responsive pour les petits écrans d'ordi */
+/*----------------------------------- Responsive pour les petits écrans d'ordi -----------------------------------*/
 
 @media (max-width: 1205px) {
     #hostList {
@@ -721,7 +717,7 @@ footer a:hover {
     }
 
     .hostCard {
-        width: 48%;
+        width: 47.5%;
     }
 
     #hostSection h2 {
