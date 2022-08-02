@@ -359,7 +359,7 @@ input[type=checkbox] {
 .hostDescription p {
     margin-top: 2%;
     margin-bottom: 3.2%;
-    font-size: 87%;
+    font-size: 14px;
 }
 
 .hostDescription div {
@@ -593,6 +593,7 @@ input[type=checkbox] {
     object-fit: cover;
     position: absolute;
     image-rendering: smooth;
+    vertical-align: middle;
 }
 
 .activityCard:nth-child(3n+1) img /* Selection Image card 1 et 4 */ {
