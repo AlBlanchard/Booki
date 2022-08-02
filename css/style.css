@@ -339,12 +339,9 @@ input[type=checkbox] {
 }
 
 .hostDescription {
-    padding-left: 4.5%;
+    padding: 0 2% 2% 6.5%;
     background-color: white;
     height: 37.5%;
-    border-right: white solid 5px;
-    border-bottom: white solid 5px;
-    border-left: white solid 5px;
     border-radius: 0 0 20px 20px;
     overflow: hidden;
 }
@@ -536,7 +533,7 @@ input[type=checkbox] {
     align-content: space-between;
     justify-content: space-between;
     height: 445px;
-    gap: auto 43px;
+    gap: 0 43px;
 }
 
 .activityCard {
