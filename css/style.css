@@ -517,40 +517,6 @@ input[type=checkbox] {
     margin-bottom: 1.5%;
 }
 
-
-/* Responsive pour les petits écrans d'ordi */
-
-@media (max-width: 1205px) {
-    #hostList {
-        gap: 20px 3.8%;
-    }
-
-    .hostCard {
-        width: 48%;
-    }
-
-    #hostSection h2 {
-        margin: 0 0 5% 0;
-    }
-
-    #showMore {
-        margin: 5% 0 1% 0.5%;
-    }
-
-    #popularSection {
-        justify-content: flex-start;
-    }
-
-    #popularSection h2 {
-        margin: 0 0 12% 0;
-    }
-
-    #popularList {
-        justify-content: flex-start;
-        gap: 6%;
-    }
-}
-
 /* Activités */
 
 #activitySection {
@@ -740,4 +706,37 @@ footer a {
 
 footer a:hover {
     color: #0065FC;
+}
+
+/* Responsive pour les petits écrans d'ordi */
+
+@media (max-width: 1205px) {
+    #hostList {
+        gap: 20px 3.8%;
+    }
+
+    .hostCard {
+        width: 48%;
+    }
+
+    #hostSection h2 {
+        margin: 0 0 5% 0;
+    }
+
+    #showMore {
+        margin: 5% 0 1% 0.5%;
+    }
+
+    #popularSection {
+        justify-content: flex-start;
+    }
+
+    #popularSection h2 {
+        margin: 0 0 12% 0;
+    }
+
+    #popularList {
+        justify-content: flex-start;
+        gap: 6%;
+    }
 }
