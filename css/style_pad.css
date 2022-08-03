@@ -1,13 +1,16 @@
+/*----------------------------------- Paramètres initiaux -----------------------------------*/
+
 body {
     margin-left: 0;
     margin-right: 0;
 }
 
 main {
+    height: auto;
     margin-left: 25px;
     margin-right: 25px;
-    height: auto;
 }
+
 
 /*----------------------------------- Recherche -----------------------------------*/
 
@@ -28,8 +31,8 @@ main {
 }
 
 #filterSection h2 {
-    margin-bottom: 16px;
     width : 100%;
+    margin-bottom: 16px;
 }
 
 #filterForm {
@@ -43,6 +46,7 @@ main {
     flex-shrink: 0;
 }
 
+
 /*----------------------------------- Hébergements et Populaires -----------------------------------*/
 
 #hostAndPopular {
@@ -55,8 +59,8 @@ main {
 /*----------------------------------- Hébergements -----------------------------------*/
 
 #hostSection {
-    width: 95%;
     align-items: center;
+    width: 95%;
 }
 
 #hostSection h2 {
@@ -65,8 +69,8 @@ main {
 }
 
 #hostList {
-    width: 90%;
     justify-content: space-between;
+    width: 90%;
 }
 
 .hostCard {
@@ -86,8 +90,8 @@ main {
 }
 
 #popularSection h2 {
-    margin: 25px;
     max-width: 70%;
+    margin: 25px;
 }
 
 #popularList {
@@ -96,10 +100,10 @@ main {
 }
 
 .popularCard {
-    margin-top: 2%;
-    margin-bottom: 2%;
     max-width: 70%;
     height: 160px;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 
@@ -150,8 +154,8 @@ footer {
 }
 
 footer section {
-    min-width: 230px;
     flex-basis: content;
+    min-width: 230px;
 }
 
 #ourHost {

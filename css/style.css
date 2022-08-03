@@ -29,20 +29,20 @@ main {
 
 }
 
-h1, h2 {
-    font-size: 22px;
-    font-weight: 700;
+h1, h2, h3 {
+    margin: 0;
 }
+
 
 /*----------------------------------- Header et navigation -----------------------------------*/
 
 header {
-    margin-left: 50px;
-    margin-right: 30px;
-    height: 114px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 114px;
+    margin-left: 50px;
+    margin-right: 30px;
 }
 
 #logo {
@@ -52,30 +52,30 @@ header {
 
 #logo img {
     width: 95px;
-    margin: 24px 0 5px 5px;
     height: fit-content;
+    margin: 24px 0 5px 5px;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 312px;
     margin: 0;
     padding: 0;
-    width: 312px;
 }
 
 nav a {
     display: flex;
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    width: 50%;
-    height: 100%;
     justify-content: center;
     align-items: center;
     align-content: center;
-    border-top: rgba(0, 0, 0, 0) solid 3px;
+    width: 50%;
+    height: 100%;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    border-top: 3px solid rgba(0, 0, 0, 0);
 }
 
 nav a:hover {
@@ -101,25 +101,25 @@ nav a:hover {
 }
 
 #searchBar {
-    display: flex;
     margin: 18px 0px 30px 5px;
+    display: flex;
 }
 
 #searchForm {
-    display: flex;
     width: 420px;
+    display: flex;
 }
 
 #locationDot {
-    border: none;
+    width: 50px;
+    height: 50px;
+    padding: 16px;
     font-size: large;
+    text-align: center;
     color: rgb(0, 0, 0);
     background: #F2F2F2;
-    height: 50px;
-    width: 50px;
-    padding: 16px;
+    border: none;
     border-radius: 16px 0px 0px 16px;
-    text-align: center;
     cursor: pointer;
 }
 
@@ -129,26 +129,26 @@ nav a:hover {
 
 #searchInput[type=text] {
     width: 235px;
-    border: none;
-    outline: none;
+    padding-right: 18px;
+    padding-left: 16px;
     font-size: 18px;
     font-weight: bold;
+    border: none;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
-    padding-left: 16px;
-    padding-right: 18px;
+    outline: none;
 }
 
 #searchButtonBig {
-    border: none;
+    width: 135px;
+    height: 50px;
+    padding-top: 4px;
     font-size: 18px;
     font-weight: 600;
-    padding-top: 4px;
-    background: #0065FC;
     color: white;
+    background: #0065FC;
+    border: none;
     border-radius: 0px 15px 15px 0px;
-    height: 50px;
-    width: 135px;
     cursor: pointer;
 }
 
@@ -163,14 +163,14 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 4px;
     max-width: 940px;
+    margin-left: 4px;
 }
 
 #filterSection h2 {
+    margin: 4px 0 0 8px;
     font-size: 18px;
     font-weight: 700;
-    margin: 4px 0 0 8px;
 }
 
 input[type=checkbox] {
@@ -189,33 +189,31 @@ input[type=checkbox] {
 }
 
 .filtersIcons  {
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 15px 0 0 0;
+    font-size: 125%;
+    text-align: center;
     color: #0065FC;
     background-color: #DEEBFF;
-    display: inline-block;
-    font-size: 125%;
-    height: 50px;
-    width: 50px;
-    padding: 0px;
-    border-radius: 25px;
-    text-align: center;
-    padding-top: 15px;
     border: none;
-    z-index: 2;
+    border-radius: 25px;
     cursor: pointer;
-    position: absolute;
 }
 
 .filtersName {
     display: flex;
     align-items: center;
-    border: #d9d9d9 solid 2px;
     height: 50px;
-    border-radius: 25px;
+    margin: 0;
     padding: 4px 22px 0px 55px;
-    cursor: pointer;
     font-size: 18px;
     font-weight: 700;
-    margin: 0;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    cursor: pointer;
 }
 
 .filtersButton:hover input ~ .filtersName {
@@ -237,8 +235,6 @@ input[type=checkbox] {
 }
 
 
-
-
 /*----------------------------------- Barre d'info -----------------------------------*/
 
 #infoLine {
@@ -247,20 +243,19 @@ input[type=checkbox] {
 
 #infoDot {
     display: inline-block;
-    color: #0065FC;
-    border: #d9d9d9 solid 1px;
-    font-size: 12px;
     width: 23px;
     height: 23px;
-    border-radius: 11px;
     padding-top: 4px;
+    font-size: 12px;
     text-align: center;
-    bottom: 3px
+    color: #0065FC;
+    border: 1px solid #d9d9d9;
+    border-radius: 11px;
 }
 
 #infoLine p {
     display: inline-block;
-    margin: 0px 0px 0px 8px;
+    margin: 0 0 0 8px;
     padding-top: 3px;
     vertical-align: middle;
 }
@@ -280,17 +275,17 @@ input[type=checkbox] {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #F2F2F2;
-    border-radius: 20px;
     width: 65.7%;
     height: 100%;
-    padding: 3%;
     min-height: 628px;
+    padding: 3%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
 }
 
 #hostSection h2 {
-    margin: 0;
     padding-top: 3px;
+    font-size: 22px;
 }
 
 #hostList {
@@ -323,30 +318,29 @@ input[type=checkbox] {
 .hostCard img {
     width: 100%;
     height: 62.5%;
-    object-fit: cover;
     border: white solid 5px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
     object-position: center;
 }
 
 .hostDescription {
-    padding: 0 2% 2% 6.5%;
-    background-color: white;
     height: 37.5%;
+    padding: 2% 2% 2% 6.5%;
+    background-color: white;
     border-radius: 0 0 20px 20px;
     overflow: hidden;
 }
 
 .hostDescription h3 {
-    margin-top: 2%;
+    min-width: 185px;
     margin-bottom: 2%;
     font-size: 100%;
-    min-width: 185px;
 }
 
 .hostDescription p {
     margin-top: 2%;
-    margin-bottom: 3.2%;
+    margin-bottom: 3.5%;
     font-size: 14px;
 }
 
@@ -361,18 +355,13 @@ input[type=checkbox] {
     transition: 0.1s;
 }
 
-.hostDescription div {
-    font-size: 75%;
-    color: #0065FC;
-}
-
 .coolPrice {
     font-weight: 600;
 }
 
 .euro {
-    font-weight: 700;
     font-size: 95%;
+    font-weight: 700;
 }
 
 #showMore {
@@ -380,11 +369,11 @@ input[type=checkbox] {
 }
 
 #showMoreLink {
+    width: 106px;
+    font-size: 110%;
+    font-weight: 700;
     text-decoration: none;
     color: black;
-    font-weight: 700;
-    font-size: 110%;
-    width: 106px;
 }
 
 #showMoreLink:hover {
@@ -395,6 +384,7 @@ input[type=checkbox] {
 /*----------------------------------- Etoiles -----------------------------------*/
 
 .stars {
+    font-size: 75%;
     color: #0065FC;
 }
 
@@ -402,37 +392,39 @@ input[type=checkbox] {
     color: #d9d9d9;
 }
 
+
 /*----------------------------------- Populaires -----------------------------------*/
 
 #popularSection {
-    width: 31.3%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    width: 31.3%;
+    padding: 3% 2.8% 3% 2.8%;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 3% 2.8% 3% 2.8%;
+
 }
 
 #popularSection h2 {
-    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 0;
+    width: 100%;
     padding-top: 3px;
+    font-size: 22px;
 }
 
 #popularList {
-    width: 100%;
-    height: 90%;
-    list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: 90%;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .popularCard {
@@ -442,11 +434,11 @@ input[type=checkbox] {
 }
 
 .popularLink {
+    display: flex;
     width: 100%;
     height: 100%;
     text-decoration: none;
     color: black;
-    display: flex;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 15px 3px #d9d9d9;
@@ -455,27 +447,26 @@ input[type=checkbox] {
 .popularLink img {
     width: 40%;
     height: 100%;
-    object-fit: cover;
     border: white solid 5px;
     border-radius: 20px 0 0 20px;
+    object-fit: cover;
     object-position: center;
 }
 
 .popularDescription {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 60%;
     height: 100%;
-    justify-content: space-between;
+    padding: 3.5% 2.5% 2.5% 4%;
     border-top: white solid 5px;
     border-right: white solid 5px;
     border-bottom: white solid 5px;
     border-radius: 0px 20px 20px 0px;
-    padding: 2% 2.5% 2% 4%;
 }
 
 .popularDescription h3 {
-    margin-top: 3%;
     margin-bottom: 3%;
     font-size: 100%;
 }
@@ -497,11 +488,6 @@ input[type=checkbox] {
     transition: 0.1s;
 }
 
-.popularDescription div:nth-child(2) {
-    font-size: 75%;
-    color: #0065FC;
-    margin-bottom: 1.5%;
-}
 
 /*----------------------------------- Activités -----------------------------------*/
 
@@ -510,26 +496,26 @@ input[type=checkbox] {
 }
 
 #activitySection h2 {
-    margin: 0 0 20px 0;
+    margin-bottom: 20px;
 }
 
 #activityList {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 0 43px;
+    height: 445px;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    display: flex;
-    flex-flow: column wrap;
-    align-content: space-between;
-    justify-content: space-between;
-    height: 445px;
-    gap: 0 43px;
 }
 
 .activityCard {
     width: 22.6%;
-    overflow: hidden;
     border-radius: 20px;
     box-shadow: 0px 5px 15px 4px #F2F2F2;
+    overflow: hidden;
 }
 
 .activityCard:nth-child(3n+1) /* Selection card 1 et 4 */ {
@@ -553,33 +539,28 @@ input[type=checkbox] {
 } 
 
 .activityLink {
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
     color: black;
 }
 
 .activityImageBorder {
+    display: flex;
+    position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    flex-shrink: 1;
-    flex-grow: 0;
-    display: flex;
-    position: relative;
-
 }
 
 .activityCard img {
+    position: absolute;
     width: 100%;
     top: 50%;
     left: 50%;
     object-fit: cover;
-    position: absolute;
-    image-rendering: smooth;
-    vertical-align: middle;
 }
 
 .activityCard:nth-child(3n+1) img /* Selection Image card 1 et 4 */ {
@@ -616,26 +597,28 @@ input[type=checkbox] {
 }
 
 .activityDescription h3 {
-    margin: 0;
     width: 100%;
-    font-size: 100%;
-    font-weight: 800;
     padding-left: 18px;
     padding-right: 18px;
+    font-size: 100%;
+    font-weight: 800;
 }
 
 .hoverText {
     position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
-    width: 100%;
+    background-color: rgba(222, 235, 255, 0.80);
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(222, 235, 255, 0.80);
-    z-index: 1;
 }
   
 .activityCard:hover .hoverText {
@@ -643,28 +626,23 @@ input[type=checkbox] {
 }
   
 .hoverText p {
-    color: white;
+    width: 100%;
     font-size: 18px;
     font-weight: 800;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     text-align: center;
-    width: 100%;
-    padding: 10px;
+    color: white;
+    overflow: hidden;
 }
+
 
 /*----------------------------------- Footer -----------------------------------*/
 
 footer {
-    height: 218px;
-    background-color: #F2F2F2;
     display: flex;
     justify-content: space-between;
+    height: 218px;
     padding: 45px 50px 45px 50px;
+    background-color: #F2F2F2;
 }
 
 footer section {
@@ -676,15 +654,15 @@ footer section {
 }
 
 footer h3 {
+    margin-bottom: 21px;
     font-size: 18px;
     font-weight: 700;
-    margin: 0 0 21px 0;
 }
 
 footer ul {
-    list-style-type: none;
-    padding: 0 0 0 0px;
+    padding: 0;
     margin: 0;
+    list-style-type: none;
 }
 
 footer li {
@@ -702,6 +680,7 @@ footer a:hover {
     color: #0065FC;
 }
 
+
 /*----------------------------------- Responsive pour les petits écrans d'ordi -----------------------------------*/
 
 @media (max-width: 1205px) {
@@ -714,7 +693,7 @@ footer a:hover {
     }
 
     #hostSection h2 {
-        margin: 0 0 5% 0;
+        margin-bottom: 5%;
     }
 
     #showMore {
@@ -726,7 +705,7 @@ footer a:hover {
     }
 
     #popularSection h2 {
-        margin: 0 0 12% 0;
+        margin-bottom: 12%;
     }
 
     #popularList {
