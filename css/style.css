@@ -211,7 +211,7 @@ input[type=checkbox] {
     border: #d9d9d9 solid 2px;
     height: 50px;
     border-radius: 25px;
-    padding: 4px 22px 0px 60px;
+    padding: 4px 22px 0px 55px;
     cursor: pointer;
     font-size: 18px;
     font-weight: 700;
@@ -236,9 +236,7 @@ input[type=checkbox] {
     height: 0;
 }
 
-.filtersButton:nth-child(3) .filtersName:nth-child(3) {         /* Sélection du filtersName "Romantique" */
-    padding: 4px 15px 0px 60px;;
-}
+
 
 
 /*----------------------------------- Barre d'info -----------------------------------*/
