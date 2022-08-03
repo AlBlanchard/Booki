@@ -120,15 +120,11 @@ nav a:hover {
     margin: 0px 0px 16px 3px;
 }
 
-#filterForm {
+#filter-form {
     justify-content: flex-start;
     align-content: space-between;
     flex-wrap: wrap;
     gap: 12px;
-}
-
-.filtersName {
-    padding: 4px 15px 0px 60px;
 }
 
 
@@ -197,17 +193,11 @@ nav a:hover {
 }
 
 .hostDescription {
-    padding-left: 3.5%;
-}
-
-.hostDescription h3 {
-    margin-top: 1%;
-    margin-bottom: 1%;
+    padding: 1% 2% 3.5% 5%;
 }
 
 .hostDescription p {
-    margin-top: 0;
-    margin-bottom: 2%;
+    margin: 0;
 }
 
 #showMore {
