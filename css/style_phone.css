@@ -106,6 +106,7 @@ nav a:hover {
     background: #0065FC;
     border: none;    
     border-radius: 16px;
+    cursor: pointer;
 }
 
 
@@ -184,7 +185,7 @@ nav a:hover {
 
 .hostCard {
     width: 100%;
-    max-width: 465px;
+    max-width: 435px;
     height: 200px;
 }
 
@@ -220,8 +221,9 @@ nav a:hover {
 }
 
 .popularCard {
-    max-width: 465px;
+    max-width: 435px;
     height: 144px;
+    font-size: inherit;
 }
 
 
@@ -246,7 +248,7 @@ nav a:hover {
 
 .activityCard {
     width: 100%;
-    max-width: 465px;
+    max-width: 435px;
 }
 
 .activityCard:nth-child(3n+1) /* Selection card 1 et 4 */ {

@@ -407,7 +407,6 @@ nav a:hover {
     padding: 3% 2.8% 3% 2.8%;
     background-color: #F2F2F2;
     border-radius: 20px;
-
 }
 
 #popularSection h2 {
@@ -416,6 +415,11 @@ nav a:hover {
     width: 100%;
     padding-top: 3px;
     font-size: 22px;
+    white-space: nowrap;
+}
+
+#popularSection h2 span {
+    margin-left: 10px;
 }
 
 #popularList {
