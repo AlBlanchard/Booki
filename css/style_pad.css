@@ -14,23 +14,23 @@ main {
 
 /*----------------------------------- Recherche -----------------------------------*/
 
-#seekSection {
+#search-section {
     margin-right: 0;
 }
 
-#searchBar {
+#search-bar {
     justify-content: center;
 }
 
 
 /*----------------------------------- Filtres -----------------------------------*/
 
-#filterSection {
+#filter-section {
     flex-direction: column;
     align-items: flex-start;
 }
 
-#filterSection h2 {
+#filter-section h2 {
     width : 100%;
     margin-bottom: 16px;
 }
@@ -47,7 +47,7 @@ main {
 
 /*----------------------------------- Hébergements et Populaires -----------------------------------*/
 
-#hostAndPopular {
+#host-and-popular {
     flex-direction: column-reverse;
     align-items: center;
     gap: 30px;
@@ -56,48 +56,48 @@ main {
 
 /*----------------------------------- Hébergements -----------------------------------*/
 
-#hostSection {
+#host-section {
     align-items: center;
     width: 95%;
 }
 
-#hostSection h2 {
+#host-section h2 {
     width: 90%;
     margin: 25px;
 }
 
-#hostList {
+#host-list {
     justify-content: space-between;
     width: 90%;
 }
 
-.hostCard {
+.host-card {
     height: 220px;
 }
 
-#showMore {
+#show-more {
     width: 90%;
 }
 
 
 /*----------------------------------- Populaires -----------------------------------*/
 
-#popularSection {
+#popular-section {
     width: 95%;
     padding: 20px;
 }
 
-#popularSection h2 {
+#popular-section h2 {
     max-width: 70%;
     margin: 25px;
 }
 
-#popularList {
+#popular-list {
     justify-content: space-between;
     gap: 0;
 }
 
-.popularCard {
+.popular-card {
     max-width: 70%;
     height: 160px;
     margin-top: 2%;
@@ -108,40 +108,40 @@ main {
 
 /*----------------------------------- Activités -----------------------------------*/
 
-#activitySection {
+#activity-section {
     margin: 2.5% 2.5% 7.5% 2.5%;
 }
 
-#activityList {
+#activity-list {
     height: 941px;
     gap: 0 0;
 }
 
-.activityCard {
+.activity-card {
     width: 46.8%;
 }
 
-.activityCard:nth-child(3n+1) /* Selection card 1 et 4 */ {
+.activity-card:nth-child(3n+1) /* Selection card 1 et 4 */ {
     flex-basis: 449px;
 }
 
-.activityCard:nth-child(2) {
+.activity-card:nth-child(2) {
     order: 4;
 }
 
-.activityCard:nth-child(3) {
+.activity-card:nth-child(3) {
     order: 5;
 }
 
-.activityCard:nth-child(4) {
+.activity-card:nth-child(4) {
     order: 5;
 }
 
-.activityCard:nth-child(5) {
+.activity-card:nth-child(5) {
     order: 2;
 }
 
-.activityCard:nth-child(6) {
+.activity-card:nth-child(6) {
     order: 3
 } 
 
@@ -157,7 +157,7 @@ footer section {
     min-width: 230px;
 }
 
-#ourHost {
+#our-host {
     padding-left: 40px;
 }
 
