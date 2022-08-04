@@ -19,22 +19,15 @@ main {
 }
 
 #search-bar {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
 }
 
 
 /*----------------------------------- Filtres -----------------------------------*/
 
 #filter-section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 #filter-section h2 {
@@ -43,8 +36,7 @@ main {
 }
 
 #filter-form {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     width: 100%;
 }
 
@@ -56,13 +48,8 @@ main {
 /*----------------------------------- Hébergements et Populaires -----------------------------------*/
 
 #host-and-popular {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column-reverse;
+    align-items: center;
     gap: 30px;
 }
 
@@ -70,9 +57,7 @@ main {
 /*----------------------------------- Hébergements -----------------------------------*/
 
 #host-section {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     width: 95%;
 }
 
@@ -82,9 +67,7 @@ main {
 }
 
 #host-list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     width: 90%;
 }
 
@@ -110,9 +93,7 @@ main {
 }
 
 #popular-list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     gap: 0;
 }
 
@@ -141,38 +122,27 @@ main {
 }
 
 .activity-card:nth-child(3n+1) /* Selection card 1 et 4 */ {
-    -ms-flex-preferred-size: 449px;
-        flex-basis: 449px;
+    flex-basis: 449px;
 }
 
 .activity-card:nth-child(2) {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    order: 4;
 }
 
 .activity-card:nth-child(3) {
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
+    order: 5;
 }
 
 .activity-card:nth-child(4) {
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
+    order: 5;
 }
 
 .activity-card:nth-child(5) {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
 }
 
 .activity-card:nth-child(6) {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3
+    order: 3
 } 
 
 
@@ -183,8 +153,7 @@ footer {
 }
 
 footer section {
-    -ms-flex-preferred-size: content;
-        flex-basis: content;
+    flex-basis: content;
     min-width: 230px;
 }
 
