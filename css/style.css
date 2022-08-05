@@ -59,8 +59,6 @@ header {
 
 #logo img {
     width: 95px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     margin: 24px 0 5px 5px;
 }
