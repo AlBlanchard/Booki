@@ -227,7 +227,7 @@ nav a:hover {
     padding-top: 4px;
 }
 
-.filter-button:nth-child(3) .filter-style {         /* Sélection du filter-style "Romantique" */
+.filter-button:nth-child(3) .filter-style {         /* Sélection du filtre "Romantique" */
     padding: 0px 15px 0px 10px;
 }
 
