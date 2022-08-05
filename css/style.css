@@ -351,7 +351,7 @@ nav a:hover {
     font-size: 14px;
 }
 
-.host-card:hover { /* IE 9 */ /* Safari 3-8 */
+.host-card:hover {
     transform: scale(1.05); 
     transition: 0.1s;
 }
