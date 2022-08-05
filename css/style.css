@@ -482,7 +482,7 @@ nav a:hover {
     display: flex;
 }
 
-.popular-card:hover { /* IE 9 */ /* Safari 3-8 */
+.popular-card:hover { 
     transform: scale(1.05); 
     transition: 0.1s;
 }
