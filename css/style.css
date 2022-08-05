@@ -96,12 +96,14 @@ nav a:hover {
 }
 
 #search-section h1 {
-    margin: 14px 0px 0px 5px;
+    margin-top: 14px;
+    margin-left: 5px;
     font-size: 22px;
 }
 
 #search-section p {
-    margin: 9px 0px 0px 5px;
+    margin-top: 9px; 
+    margin-left: 5px;
     font-size: 16px;
 }
 
@@ -124,7 +126,8 @@ nav a:hover {
     color: rgb(0, 0, 0);
     background: #F2F2F2;
     border: none;
-    border-radius: 16px 0px 0px 16px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
     cursor: pointer;
 }
 
@@ -153,7 +156,8 @@ nav a:hover {
     color: white;
     background: #0065FC;
     border: none;
-    border-radius: 0px 15px 15px 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     cursor: pointer;
 }
 
@@ -173,7 +177,8 @@ nav a:hover {
 }
 
 #filter-section h2 {
-    margin: 4px 0 0 8px;
+    margin-top: 4px;
+    margin-left: 8px;
     font-size: 18px;
     font-weight: 700;
 }
@@ -198,8 +203,8 @@ nav a:hover {
     display: flex;
     align-items: center;
     height: 50px;
-    margin: 0;
-    padding: 0px 20px 0px 10px;
+    padding-right: 20px;
+    padding-left: 10px;
     font-size: 18px;
     font-weight: 700;
     border: 2px solid #d9d9d9;
@@ -213,7 +218,7 @@ nav a:hover {
     z-index: 1;
     width: 50px;
     height: 50px;
-    padding: 15px 0 0 0;
+    padding-top: 15px;
     font-size: 20px;
     text-align: center;
     color: #0065FC;
@@ -228,7 +233,8 @@ nav a:hover {
 }
 
 .filter-button:nth-child(3) .filter-style {         /* Sélection du filtre "Romantique" */
-    padding: 0px 15px 0px 10px;
+    padding-right: 15px;
+    padding-left: 10px;
 }
 
 .filter-button:hover input ~ .filter-style {
@@ -323,11 +329,9 @@ nav a:hover {
     width: 100%;
     height: 62.5%;
     border: white solid 5px;
-    border-radius: 20px 20px 0 0;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 .host-description {
@@ -337,7 +341,8 @@ nav a:hover {
     height: 37.5%;
     padding: 2% 2% 4% 6.5%;
     background-color: white;
-    border-radius: 0 0 20px 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     overflow: hidden;
 }
 
@@ -447,11 +452,9 @@ nav a:hover {
     width: 40%;
     height: 100%;
     border: white solid 5px;
-    border-radius: 20px 0 0 20px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    object-fit: cover;
 }
 
 .popular-description {
@@ -464,7 +467,8 @@ nav a:hover {
     border-top: white solid 5px;
     border-right: white solid 5px;
     border-bottom: white solid 5px;
-    border-radius: 0px 20px 20px 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .popular-description h3 {
@@ -555,8 +559,7 @@ nav a:hover {
     width: 100%;
     top: 50%;
     left: 50%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
 
 .activity-card:nth-child(3n+1) img /* Selection Image card 1 et 4 */ {
@@ -608,10 +611,6 @@ nav a:hover {
     align-items: center;
     width: 100%;
     height: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-color: rgba(222, 235, 255, 0.80);
     opacity: 0;
     transition: .5s ease;
