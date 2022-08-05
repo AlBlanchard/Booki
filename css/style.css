@@ -15,10 +15,6 @@ body {
     text-rendering: auto;
 }
 
-header {
-    height: 6%;
-}
-
 main {
     margin-left: 50px;
     margin-right: 50px;
