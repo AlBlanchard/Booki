@@ -166,7 +166,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    padding: 20px;
+    padding: 5%;
     background-color: white;
     border-radius: 0;
 }
@@ -181,12 +181,11 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 12.5px 3.8%;
+    gap: 12.5px;
 }
 
 .host-card {
     width: 100%;
-    max-width: 435px;
     height: 200px;
 }
 
@@ -195,7 +194,9 @@ nav a:hover {
 }
 
 .host-description {
-    padding: 1% 2% 3.5% 5%;
+    padding: 1% 2% 0 5%;
+    justify-content: flex-start;
+    gap: 10%
 }
 
 .host-description p {
@@ -217,6 +218,7 @@ nav a:hover {
 #popular-section {
     width: 100%;
     border-radius: 0;
+    padding: 5%;
 }
 
 #popular-section h2 {
@@ -226,7 +228,8 @@ nav a:hover {
 }
 
 .popular-card {
-    max-width: 435px;
+    width: 100%;
+    max-width: initial;
     height: 144px;
     font-size: inherit;
 }
@@ -236,7 +239,7 @@ nav a:hover {
 
 #activity-section {
     margin: 0 0 60px 0;
-    padding: 0 20px 0 20px;
+    padding: 0 5% 0 5%;
 }
 
 #activity-section h2 {
@@ -247,14 +250,12 @@ nav a:hover {
 
 #activity-list {
     align-content: center;
-    width: 100%;
     height: auto;
     gap: 24px 0px;
 }
 
 .activity-card {
     width: 100%;
-    max-width: 435px;
 }
 
 .activity-card:nth-child(n) { /* Pour la specificité */
